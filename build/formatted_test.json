@@ -1,0 +1,18 @@
+{
+    "value0": [
+        {
+            "name": "Rizwan",
+            "sex": 0,
+            "height": 5.0,
+            "weight": 200.4,
+            "eyeColor": "Brown"
+        },
+        {
+            "name": "Katy",
+            "sex": 1,
+            "height": 5.8,
+            "weight": 150.4,
+            "eyeColor": "Brown"
+        }
+    ]
+}

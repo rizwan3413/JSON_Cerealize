@@ -111,32 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named test1
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test1
+.PHONY : test1
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+test1/fast:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
+.PHONY : test1/fast
+
+cereal_lohman_jsonExample.o: cereal_lohman_jsonExample.cpp.o
+
+.PHONY : cereal_lohman_jsonExample.o
 
 # target to build an object file
-test.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.o
-.PHONY : test.o
+cereal_lohman_jsonExample.cpp.o:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/cereal_lohman_jsonExample.cpp.o
+.PHONY : cereal_lohman_jsonExample.cpp.o
+
+cereal_lohman_jsonExample.i: cereal_lohman_jsonExample.cpp.i
+
+.PHONY : cereal_lohman_jsonExample.i
 
 # target to preprocess a source file
-test.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.i
-.PHONY : test.i
+cereal_lohman_jsonExample.cpp.i:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/cereal_lohman_jsonExample.cpp.i
+.PHONY : cereal_lohman_jsonExample.cpp.i
+
+cereal_lohman_jsonExample.s: cereal_lohman_jsonExample.cpp.s
+
+.PHONY : cereal_lohman_jsonExample.s
 
 # target to generate assembly for a file
-test.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.s
-.PHONY : test.s
+cereal_lohman_jsonExample.cpp.s:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/cereal_lohman_jsonExample.cpp.s
+.PHONY : cereal_lohman_jsonExample.cpp.s
 
 # Help Target
 help:
@@ -145,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... edit_cache"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... test1"
+	@echo "... cereal_lohman_jsonExample.o"
+	@echo "... cereal_lohman_jsonExample.i"
+	@echo "... cereal_lohman_jsonExample.s"
 .PHONY : help
 
 
